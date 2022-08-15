@@ -1,25 +1,53 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from "react";
+import axios from "axios";
+import "./App.css";
+import Search from "./Search-form";
+import Data from "./Data";
+import Icon from "./Icon";
 
-function App() {
+export default function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div className="container">
+        <div className="row archive" id="archive"></div>
+        <br />
+        <div className="row">
+          <div className="col-4">
+            <div className="card middle-row">
+              <div className="card-body">
+                <br />
+                and the weather is..
+                <Search city={"istanbul"} />
+              </div>
+            </div>
+          </div>
+
+          <div className="col-3">
+            <div className="card middle-row">
+              <div className="card-body">
+                <br />
+                <Data city={"istanbul"} />
+              </div>
+            </div>
+          </div>
+
+          <div className="col-3">
+            <div className="card middle-row">
+              <div className="card-body">
+                <Icon city={"istanbul"} />
+              </div>
+            </div>
+          </div>
+        </div>
+        <br />
+        <div className="row" id="forecast"></div>
+      </div>
+      <div>
+        <small>
+          <a href="#">Open-sourced code</a> by{" "}
+          <a href="https://github.com/ayseSultanGun">ayse sultan guneroglu</a>
+        </small>
+      </div>
     </div>
   );
 }
-
-export default App;

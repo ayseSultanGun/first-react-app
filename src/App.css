@@ -1,38 +1,77 @@
-.App {
+body {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.btn {
+  position: relative;
+  top: -42px;
+  left: 95px;
+  border-radius: 50%;
+  padding: 10px;
+  margin: 0;
+  background: #ec6e4c;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.card {
+  border-radius: 50%;
+  box-shadow: 10px 5px 5px #f2f2f2;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.middle-row {
+  height: 250px;
 }
 
-.App-link {
-  color: #61dafb;
+p {
+  margin-bottom: 0;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.icon {
+  font-size: 70px;
+}
+
+.icon-main {
+  width: 150px;
+}
+
+.last-week {
+  font-size: 12px;
+}
+
+.degree-main {
+  font-size: 75px;
+  color: #ec6e4c;
+}
+
+.main-card-text {
+  font-weight: 500;
+  font-size: 25px;
+}
+
+.form-group {
+  width: 70%;
+}
+
+.form-control {
+  position: relative;
+  top: 0px;
+  left: 40px;
+  border-radius: 20px;
+}
+
+#date {
+  font-size: 18px;
+}
+
+#city {
+  font-size: 20px;
+}
+
+.middle-row .active {
+  color: #48484a;
+  cursor: default;
+  text-decoration: none;
+}
+
+.middle-row .active :hover {
+  text-decoration: none;
 }
