@@ -1,8 +1,6 @@
 import React, { useState } from "react";
-import axios from "axios";
 
 export default function Search(props) {
-  let [city, setCity] = useState(props.city);
   let [todate, setTodate] = useState("now");
 
   function formatDate(timestamp) {

@@ -1,11 +1,11 @@
 import React, { useState } from "react";
-import axios from "axios";
 import "./App.css";
 import Search from "./Search-form";
 import Data from "./Data";
 import Icon from "./Icon";
 
 export default function App() {
+  let [city, setCity] = useState("istanbul");
   return (
     <div className="App">
       <div className="container">
@@ -44,7 +44,10 @@ export default function App() {
       </div>
       <div>
         <small>
-          <a href="#">Open-sourced code</a> by{" "}
+          <a href="https://github.com/ayseSultanGun/first-react-app">
+            Open-sourced code
+          </a>{" "}
+          by{" "}
           <a href="https://github.com/ayseSultanGun">ayse sultan guneroglu</a>
         </small>
       </div>
