@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 
 export default function Search(props) {
+  let [city, setCity] = useState("istanbul");
   let [todate, setTodate] = useState("now");
 
   function formatDate(timestamp) {

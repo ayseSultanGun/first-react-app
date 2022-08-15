@@ -1,11 +1,10 @@
-import React, { useState } from "react";
+import React from "react";
 import "./App.css";
 import Search from "./Search-form";
 import Data from "./Data";
 import Icon from "./Icon";
 
 export default function App() {
-  let [city, setCity] = useState("istanbul");
   return (
     <div className="App">
       <div className="container">
@@ -16,7 +15,7 @@ export default function App() {
             <div className="card middle-row">
               <div className="card-body">
                 <br />
-                and the weather is..
+                and the Weather is..
                 <Search city={"istanbul"} />
               </div>
             </div>
