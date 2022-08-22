@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import axios from "axios";
 import FormatDate from "./FormatDate";
+import WeatherInfo from "./WeatherInfo";
+import WeatherInfo2 from "./WeatherInfo2";
 
 export default function Weather(props) {
   let [city, setCity] = useState(props.defaultCity);
@@ -64,30 +66,8 @@ export default function Weather(props) {
           </div>
         </div>
 
-        <div className="col-3">
-          <div className="card middle-row">
-            <div className="card-body">
-              <br />
-              <h1 className="degree-main">{weatherData.temperature}°F</h1>
-
-              <p>humidity: {weatherData.humidity}% 💧</p>
-              <p>wind: {weatherData.wind} km/hr 🍃</p>
-            </div>
-          </div>
-        </div>
-
-        <div className="col-3">
-          <div className="card middle-row">
-            <div className="card-body">
-              <img
-                src={`https://openweathermap.org/img/wn/${weatherData.icon}@2x.png`}
-                alt={weatherData.description}
-                className="icon-main"
-              />
-              <p>{weatherData.description}</p>
-            </div>
-          </div>
-        </div>
+        <WeatherInfo data={weatherData} />
+        <WeatherInfo2 data2={weatherData} />
       </div>
     );
   } else {
