@@ -42,6 +42,10 @@ p {
   color: #ec6e4c;
 }
 
+.unit {
+  font-size: 40px;
+}
+
 .main-card-text {
   font-weight: 500;
   font-size: 25px;
