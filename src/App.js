@@ -1,8 +1,6 @@
 import React from "react";
+import Weather from "./Weather";
 import "./App.css";
-import Search from "./Search-form";
-import Data from "./Data";
-import Icon from "./Icon";
 
 export default function App() {
   return (
@@ -10,34 +8,7 @@ export default function App() {
       <div className="container">
         <div className="row archive" id="archive"></div>
         <br />
-        <div className="row">
-          <div className="col-4">
-            <div className="card middle-row">
-              <div className="card-body">
-                <br />
-                and the Weather is..
-                <Search city={"istanbul"} />
-              </div>
-            </div>
-          </div>
-
-          <div className="col-3">
-            <div className="card middle-row">
-              <div className="card-body">
-                <br />
-                <Data city={"istanbul"} />
-              </div>
-            </div>
-          </div>
-
-          <div className="col-3">
-            <div className="card middle-row">
-              <div className="card-body">
-                <Icon city={"istanbul"} />
-              </div>
-            </div>
-          </div>
-        </div>
+        <Weather defaultCity="Istanbul" />
         <br />
         <div className="row" id="forecast"></div>
       </div>
