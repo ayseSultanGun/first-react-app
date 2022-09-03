@@ -9,8 +9,6 @@ export default function App() {
         <div className="row archive" id="archive"></div>
         <br />
         <Weather defaultCity="Istanbul" />
-        <br />
-        <div className="row" id="forecast"></div>
       </div>
       <div>
         <small>
